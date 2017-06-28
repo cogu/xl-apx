@@ -1,0 +1,26 @@
+APX/1.2
+N"TestSignals"
+T"SoundRequest_T"{"SoundId"S"Volume"C"Balance"C"Repetitions"C} #0
+T"UserInfo_T"{"Id"l"Name"a[128]}                               #1
+T"EngineSpeed_T"S                                              #2
+T"VehicleSpeed_T"S                                             #3
+T"InactiveActive_T"C(0,3):VT=("InactiveActive_Inactive","InactiveActive_Active","InactiveActive_Error","InactiveActive_NotAvailable") #4
+T"OnOff_T"C(0,3):VT=("OnOff_Off","OnOff_On","OnOff_Error","OnOff_NotAvailable")                                            #5
+T"Percent_T"C                                                  #6
+T"CoolantTemp_T"C                                              #7
+P"SoundRequest"T[0]:={65535,255,255,255}
+P"UserInfo"T[1]:={-1,""}
+P"EngineSpeed"T[2]:=65535
+P"VehicleSpeed"T[3]:=65535
+P"ParkBrakeStatus"T[4]:=3
+P"HighBeamStatus"T[5]:=3
+P"FuelLevel"T[6]:=255
+P"CoolantTemp"T[7]:=255
+P"MediaPlayerSong"a[256]:=""
+P"MediaPlayerArtist"a[256]:=""
+P"TotalTripDistance"L:=0xFFFFFFFF
+P"TripADistance"L:=0xFFFFFFFF
+P"TripBDistance"L:=0xFFFFFFFF
+R"TimeOfDay"{"Hour"C(0,23)"Minute"C(0,59)"Second"C(0,59)}
+R"CurrentDate"{"Year"S"Month"C(0,11)"Day"C(0,30)}
+
